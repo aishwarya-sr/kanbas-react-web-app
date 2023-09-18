@@ -1,0 +1,159 @@
+<head>
+   <title>GRADES</title>
+   <style>
+      #details {
+         border: 1px solid black;
+         padding: 3px;
+      }
+
+      #details th,
+      #details td {
+         border: 1px solid black;
+         padding: 1px;
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+   <table>
+      <colgroup>
+         <col style="width: 12%;">
+         <col style="width: 12%;">
+         
+      </colgroup>
+      <tr>
+         <td style="vertical-align: top">
+            <ul>
+                <li><a href="../Profile/index.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="../Home/index.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td style="vertical-align: top; padding-left: 5px;">
+            <ul>
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom meetings</a></li>
+                <li><a href="../Assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="../Settings/courseDetails.html">Settings</a></li>
+            </ul>
+        </td>
+         <td style="vertical-align: top; padding-left: 10px;">
+            <select>
+               <option value="Gradebook" selected>Gradebook</option>
+            </select>
+            <button>Import</button>
+            <select>
+               <option value="Export" selected>Export</option>
+            </select>
+            <button>Configure</button>
+            <label for="Student name">
+               <h3>Student Names</h3>
+            </label>
+            <input id="Student name" placeholder="Search Students" type="text">
+            <label for="Assignment names">
+               <h3>Assignment Names</h3>
+            </label>
+            <input id="Assignment names" placeholder="Search Assignments" type="text">
+            </br>
+         </br>
+            <button> Apply Filters </button>
+            </br>
+         </br>
+            <table id="details">
+               <tr>
+                  <th>Student name</th>
+                  <th>A1 SETUP Out of 100</th>
+                  <th>A2 HTML Out of 100</th>
+                  <th>A3 CSS Out of 100</th>
+                  <th>A4 BOOTSTRAP Out of 100</th>
+                  <th>A5 JAVASCRIPT Out of 100</th>
+                  <th>A6 REACT Out of 100</th>
+                  <th>A7 REDUX Out of 100</th>
+                  <th>A8 NODE Out of 100</th>
+                  <th>A9 MONGO Out of 100</th>
+               </tr>
+               <tr>
+                  <td>Alice Wonderland</td>
+                  <td>98</td>
+                  <td>89</td>
+                  <td>87</td>
+                  <td>90</td>
+                  <td>89</td>
+                  <td>94</td>
+                  <td>88</td>
+                  <td>87</td>
+                  <td>100</td>
+               </tr>
+               <tr>
+                  <td>Princess Leia</td>
+                  <td>98</td>
+                  <td>80</td>
+                  <td>87</td>
+                  <td>86</td>
+                  <td>100</td>
+                  <td><input type="text" value="85" style="width: 50%;text-align: center;"></td>
+                  <td>98</td>
+                  <td>98</td>
+                  <td>98</td>
+               </tr>
+               <tr>
+                  <td>Luke Skywalker</td>
+                  <td><input type="text" value="99" style="width: 50%;text-align: center;"></td>
+                  <td>88</td>
+                  <td>97</td>
+                  <td>82</td>
+                  <td>96</td>
+                  <td>93</td>
+                  <td>95</td>
+                  <td>100</td>
+                  <td>93</td>
+               </tr>
+               <tr>
+                  <td>Han Solo</td>
+                  <td>83</td>
+                  <td>99</td>
+                  <td>94</td>
+                  <td>98</td>
+                  <td>86</td>
+                  <td>85</td>
+                  <td><input type="text" value="86" style="width: 50%;text-align: center;"></td>
+                  <td>80</td>
+                  <td>84</td>
+               </tr>
+               <tr>
+                  <td>Lando Calresian</td>
+                  <td>83</td>
+                  <td><input type="text" value="92" style="width: 50%;text-align: center;"></td>
+                  <td>80</td>
+                  <td>80</td>
+                  <td>98</td>
+                  <td>92</td>
+                  <td>87</td>
+                  <td>90</td>
+                  <td>95</td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</body>
