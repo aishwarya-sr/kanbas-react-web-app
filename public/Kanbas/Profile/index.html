@@ -1,65 +1,173 @@
 <head>
     <title>PROFILE</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
 </head>
 
 <body>
-    <table>
-        <colgroup>
-            <col style="width: 12%;">
-            <col style="width: 12%;">
-            <col style="width: 40%;">
-        </colgroup>
-        <tr>
-            <td style="vertical-align: top">
-                <ul>
-                    <li><a href="index.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../Home/index.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td style="vertical-align: top; padding-left: 5px;">
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="index.html">Profile</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Qwickly Course Tools</a></li>
-                    <li><a href="#">Global Announcements</a></li>
-                </ul>
-            </td>
-            <td style="vertical-align: top; padding-left: 10px;">
-                <p>Aishwarya Suyamindra's Profile</p>
-                <hr>
-                <form action="edit.html">
-                    <table style="margin: 0px; width: 100%;">
-                        <tr>
-                            <td style="vertical-align: top;">
-                                <h2>Aishwarya Suyamindra</h2>
-                            </td>
-                            <td style="float: right; vertical-align: top;">
-                                <button type="submit">&#9998 Edit Profile</button>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-                <p>Contact</p>
-                <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-                <p>Biography</p>
-                <p>Student, Software Engineer, Tech and AI Enthusiast!</p>
-                <p>Links</p>
-                <p><a href="https://www.linkedin.com/in/aishwarya-suyamindra">LinkedIn</a></p>
-            </td>
-            <td>
-            </td>
-        </tr>
-    </table>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 d-none d-sm-none d-md-none d-lg-block scrollable" id="navbar">
+                <div class="logo">
+                    <img src="../resources/logo.png">
+                </div>
+                <div class="nav-element nav-element-active">
+                    <a href="index.html">
+                        <div class="icon icon-user">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                        <div class="text">
+                            Account
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="../Dashboard/index.html">
+                        <div class="icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="text">
+                            Dashboard
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="../Assignments/index.html">
+                        <div class="icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="text">
+                            Courses
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="text">
+                            Calender
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="text">
+                            Inbox
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="text">
+                            History
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="text">
+                            Studio
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </div>
+                        <div class="text">
+                            Commons
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                        <div class="text">
+                            Help
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="profile-header">
+                    <div class="icon"><i class="fa-solid fa-bars"></i></div>
+                    <div id="name">Jose Annunziato's Profile</div>
+                </div>
+                <div class="container-fluid" style="height: 80%;">
+                    <div class="row scrollable">
+                        <div class="col-2 d-none d-sm-none d-md-block navbar-side">
+                            <ul>
+                                <li><a href="#">Notifications</a></li>
+                                <li class="active"><a href="index.html">Profile</a></li>
+                                <li><a href="#">Files</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">ePortfolios</a></li>
+                                <li><a href="#">Shared Content</a></li>
+                                <li><a href="#">The Hub</a></li>
+                                <li><a href="#">Qwickly Course Tools</a></li>
+                                <li><a href="#">Global Announcements</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <form action="edit.html">
+                                <div class="row">
+                                    <div class="col-8 col-xs-12">
+                                        <div class="details-container">
+                                            <div class="first">
+                                                <i class="fa-solid fa-circle-user"
+                                                    style="color: gray; font-size: 10em;"></i>
+                                            </div>
+                                            <div class="second">
+                                                <h2>Jose Annunziato</h2>
+                                                <div>
+                                                    <h3 class="header">Contact</h3>
+                                                    <p class="content">No registered services, you can add some on the
+                                                        <a href="#">settings</a> page.</p>
+                                                </div>
+                                                <div>
+                                                    <h3 class="header">Biography</h3>
+                                                    <p class="content">Faculty, Software Engineer, AI, Space and
+                                                        renweables
+                                                        enthusiast</p>
+                                                </div>
+                                                <div>
+                                                    <h3 class="header">Links</h3>
+                                                    <p class="content"><a
+                                                            href="https://www.youtube.com/watch?v=_yx7-pYX8bc">Youtube</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-none d-sm-block">
+                                        <button type="submit" class="btn btn-light act-button" id="edit-button"><i
+                                                class="fa-solid fa-pencil"></i> Edit
+                                            Profile</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>

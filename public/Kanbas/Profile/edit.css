@@ -1,0 +1,19 @@
+#links .row {
+   align-items: center;
+}
+
+#links .input {
+    margin: 0; 
+    padding: 5;
+}
+
+#links .icons {
+    margin: 0; 
+    padding: 5;
+    text-align: center;
+}
+
+#fill-details-container {
+    border-bottom: 1px solid #c7cdd1;
+    margin-bottom: 5;
+}
