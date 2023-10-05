@@ -1,469 +1,409 @@
 <head>
-    <title>COURSE NAVIGATION</title>
-    <style>
-        #home td {
-            border: 1px solid black;
-            text-align: center;
-        }
+    <title>COURSE DETAILS</title>
+    <link href="../index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="../Profile/index.css" rel="stylesheet" />
+    <link href="../Home/index.css" rel="stylesheet" />
+    <link href="../Assignments/index.css" rel="stylesheet" />
+    <link href="../" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
 
-        #items td {
-            border: 0px;
-            text-align: left;
-            padding: 5px 10px 2px 10px;
-        }
-
-        #items #first {
-            width: 100%;
-        }
-
-        #items #second {
-            float: right;
-        }
-    </style>
 </head>
 
 <body>
-    <table>
-        <colgroup>
-            <col style="width: 12%;">
-            <col style="width: 12%;">
-            <col style="width: 65%;">
-        </colgroup>
-        <tr>
-            <td style="vertical-align: top;">
-                <ul>
-                    <li><a href="../Profile/index.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../Home/index.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td style="vertical-align: top;">
-                <ul>
-                    <li><a href="../Home/courses.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom meetings</a></li>
-                    <li><a href="../Assignments/index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../Grades/Grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="courseDetails.html">Settings</a></li>
-                </ul>
-            </td>
-            <td style="vertical-align: top;">
-                <button type="button"><a href="courseDetails.html">Course Details</a></button>
-                <button type="button"><a href="#">Sections</a></button>
-                <button type="button"><a href="courseNavigation.html">Navigation</a></button>
-                <button type="button"><a href="#">Apps</a></button>
-                <button type="button"><a href="#">Feature Options</a></button>
-                <button type="button"><a href="#">Integrations</a></button>
-                <p>Drag and drop items to render them in the course navigation.</p>
-                <table id="home" style="border-spacing: 0px; width: 40%;">
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Home
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Modules
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Piazza
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Zoom Meetings
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Assignments
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Quizzes
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Grades
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        People
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td style="width: 100%;">
-                                        Panapto Video
-                                    </td>
-                                    <td style="float: right;">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                </br>
-                <label>Drag items here to hide them from students.</label>
-                </br>
-                <label>Disabling most pages will cause students who visits those pahes to be redirected to the
-                    course home page.</label>
-                <table id="home" style="border-spacing: 0px; width: 40%;">
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Chat
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        SCORM
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Attendance
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Barnes and Noble Bookstore
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Digication
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Top Hat
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Syllabus
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Perusall
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Microsoft Teams Meetings
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        FACT Reporting and Photo Roster
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Progress Reports (Navigate)
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Microsoft Teams for Canvas
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        VHL Central
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Gradescope 1.3
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        Credentials
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table id="items">
-                                <tr>
-                                    <td id="first">
-                                        iClicker
-                                        </br>
-                                        Page disabled, won't appear in navigation
-                                    </td>
-                                    <td id="second">
-                                        &#8942;
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </br>
-                <button>Save</button>
-            </td>
-        </tr>
-    </table>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 d-none d-sm-none d-md-none d-lg-block scrollable" id="navbar">
+                <div class="logo">
+                    <img src="../resources/logo.png">
+                </div>
+                <div class="nav-element">
+                    <a href="../Profile/index.html">
+                        <div class="icon icon-user">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                        <div class="text">
+                            Account
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="../Dashboard/index.html">
+                        <div class="icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="text">
+                            Dashboard
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element nav-element-active">
+                    <a href="index.html">
+                        <div class="icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="text">
+                            Courses
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="text">
+                            Calender
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="text">
+                            Inbox
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="text">
+                            History
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="text">
+                            Studio
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </div>
+                        <div class="text">
+                            Commons
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-element">
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                        <div class="text">
+                            Help
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <nav aria-label="breadcrumb"
+                    class="profile-header breadcrumb-header breadcrumb d-flex justify-content-between">
+                    <ol class="breadcrumb">
+                        <li class="icon"><i class="fa-solid fa-bars"></i></li>
+                        <li class="section m-1">CS5160.11744.202310</li>
+                        <li class="element m-1 color-gray">></li>
+                        <li class="element m-1">Settings</li>
+                    </ol>
+                </nav>
+
+                <div class="container-fluid">
+                    <div class="row scrollable">
+                        <div class="col-2 d-none d-sm-none d-md-block navbar-side">
+                            <div style="padding: 5;font-size: 12px;">
+                                <p><i>202310_2 Fall 2022 Semester</i></p>
+                            </div>
+                            <ul>
+                                <li><a href="../Home/index.html">Home</a></li>
+                                <li><a href="#">Modules</a></li>
+                                <li><a href="#">Piazza</a></li>
+                                <li><a href="#">Zoom meetings</a></li>
+                                <li><a href="../Assignments/index.html">Assignments</a></li>
+                                <li><a href="#">Quizzes</a></li>
+                                <li><a href="../Grades/grades.html">Grades</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">Panopto Video</a></li>
+                                <li><a href="#">Discussions</a></li>
+                                <li><a href="#">Announcements</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Files</a></li>
+                                <li><a href="#">Rubrics</a></li>
+                                <li><a href="#">Outcomes</a></li>
+                                <li><a href="#">Collaborations</a></li>
+                                <li><a href="#">Syllabus</a></li>
+                                <li class="active"><a href="courseDetails.html">Settings</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link color-main" href="courseDetails.html">Course Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-main" href="#">Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-main active" href="courseNavigation.html">Navigation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-main" href="#">Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-main" href="#">Feature Options</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-main" href="#">Integrations</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="col-7 mt-5">
+                                    <p>Drag and drop items to reorder them in the course navigation.</p>
+                                    <ul class="list-group course-navigation-content-list">
+                                        <li class="list-group-item">
+                                            <div class="ms-3">Home</div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Modules</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Piazza</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Zoom Meetings</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Assignments</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Quizzes</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Grades</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">People</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">Panapto video</div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-7 mt-5">
+                                    <div class="hidden-fields">
+                                        <div class="text">Drag items here to hide them from students.</div>
+                                        <div class="subtext">Disabling most pages will cause studnets who visit those
+                                            pahes to be redirected to the course home page.</div>
+                                    </div>
+                                    <ul class="list-group course-navigation-content-list">
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Chat</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">SCORM</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Attendance</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Barnes and Noble Bookstore</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Digication</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Top Hat</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                 <div class="text">Syllabus</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Perusall</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Microsoft Teams Meetings</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">FACT Reporting and Phot Roster</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Progress Reports (Navigate)</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Microsoft Teams for Canvas</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">VHL Central</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Gradescope 1.3</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">Credentials</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div class="ms-3">
+                                                <div class="text">iClicker</div>
+                                                <div class="subtext ms-2"><i>Page disabled, won't appear in
+                                                        navigation</i></div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-ellipsis-vertical color-black m-1"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button type="button"
+                                        class="btn act-button main-color-button-background mt-3">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>

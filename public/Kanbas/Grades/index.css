@@ -1,0 +1,16 @@
+.grade-row td, .grade-header td {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.grade-row td:first-child {
+    color: var(--main-color) !important;
+}
+
+#grades-filter {
+    height: 20%;
+}
+
+#grade-content-header {
+    padding: 10px;
+}

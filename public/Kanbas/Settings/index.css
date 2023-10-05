@@ -1,0 +1,15 @@
+.course-navigation-content-list {
+    border-radius: unset !important;
+}
+
+.subtext {
+    font-size: 14px;
+}
+
+.image-box{
+    border: 1px solid black;
+    align-items: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
