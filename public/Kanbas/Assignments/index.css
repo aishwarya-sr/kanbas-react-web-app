@@ -31,6 +31,10 @@
     flex-grow: 1;
 }
 
+.content-toolbar-element .first form {
+    border: unset;
+}
+
 .group-header {
     background-color: var(--button-background-color) !important;
 }

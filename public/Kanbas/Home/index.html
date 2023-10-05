@@ -165,7 +165,7 @@
                                 <li><a href="../Settings/courseDetails.html">Settings</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12 col-lg-7">
                             <div class="content-toolbar mb-4">
                                 <div class="content-toolbar-elements">
                                     <div class="first"></div>
@@ -179,7 +179,7 @@
                                             aria-haspopup="true" aria-expanded="false">
                                             <i class="fa-solid fa-grip-vertical color-black m-1"></i>Publish All
                                         </button>
-                                        <button type="button" class="btn act-button main-color-button-background"><i
+                                        <button type="button" class="btn btn-danger act-button"><i
                                                 class="fa-solid fa-plus color-black m-1"></i>Module</button>
                                         <button type="button"
                                             class="btn btn-light act-button default-button-background"><i
@@ -576,13 +576,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-2 d-none d-xl-block">
+                        <div class="col-3 d-none d-xl-block">
                             <div>
                                 <p>Course Status</p>
-                                <div class="list-group list-group-horizontal">
-                                    <button type="button" class="btn btn-light" style="font-size: 13px !important;"><i
+                                <div class="">
+                                    <button type="button" class="btn btn-light"><i
                                             class="fa-solid fa-ban"></i>Unpublish</button>
-                                    <button type="button" class="btn btn-success" style="font-size: 13px !important;"><i
+                                    <button type="button" class="btn btn-success" disabled><i
                                             class="fa-solid fa-circle-check"></i>Published</button>
                                 </div>
                                 <div class="list-group mt-3 list-group-flush options">
@@ -604,44 +604,58 @@
                                             class="fa-solid fa-file-export m-1"></i>View Course Notifications</button>
                                 </div>
                             </div>
-                            <div class="list-group list-group-flush mt-3">
-                                <div class="list-group-item" class="calendar-header">
-                                    To do
+                            <div class="row p-3">
+                                <div class="col">
+                                    <h5>To Do</h5>
                                 </div>
-                                <div class="list-group-item list-group-item-action flex-column align-items-start calendar-list-content"
-                                    style="font-size: 12px;">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <small>
-                                            <div class="first">1</div>
-                                        </small>
-                                        <div class="flex-grow">
-                                            <label><a href="#" class="link">Grade A1 - ENV + HTML</a></label>
-                                            <label class="mb-1">100 points Sep 18 at 11:59 PM</label>
-                                        </div>
+                                <hr class="pe-3">
+                                <ol class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex todo justify-content-between align-items-start">
+                                      <span class="badge bg-danger rounded-circle">1</span>
+                                      <div class="ms-2 me-auto">
+                                        <div><a href="" class="color-main todo">Grade A1 - ENV + HTML</a></div>
+                                        <small>100 points | Sep 15 11:59pm</small>
+                                      </div>
+                                      
+                                    </li>
+                                  </ol>
+                            </div>
+                            <div class="row ps-3 mt-1">
+                                <div class="col">
+                                    <h5>Coming Up</h5>
+                                </div>
+                                <div class="col float-end">
+                                    <p><a href="" class="color-main todo"><i class="far fa-calendar me-1"></i>View Calendar</a></p>
+                                </div>
+                                <hr class="pe-3">
+                            </div>
+                            <div class="row px-3">
+                                <div class="d-flex float-end">
+                                    <i class="far fa-calendar me-1"></i>
+                                    <div class="ps-3">
+                                    <a href="" class="ps-3 color-main todo">Lecture</a><br>
+                                    <small class="ps-3">CS5610.17387.202410</small><br>
+                                    <small class="ps-3">Sep 18 11:59pm</small>
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="list-group list-group-flush mt-3">
-                                <div class="list-group-item" class="calendar-header d-flex justify-content-between">
-                                    <div>Coming up</div>
-                                    <div class="flex-grow">
-                                        <div>
-                                            <i class="fa-solid fa-calendar-days"></i>
-                                        </div>
-                                        <a href="#" class="link">View Calendar</a>
+                            <div class="row px-3">
+                                <div class="d-flex float-end">
+                                    <i class="far fa-calendar me-1"></i>
+                                    <div class="ps-3">
+                                    <a href="" class="ps-3 color-main todo">Web development lecture</a><br>
+                                    <small class="ps-3">CS5610.17387.202410</small><br>
+                                    <small class="ps-3">Sep 18 11:59pm</small>
                                     </div>
                                 </div>
-                                <div
-                                    class="list-group-item list-group-item-action flex-column align-items-start calendar-list-content">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <small>
-                                            <div class="first">1</div>
-                                        </small>
-                                        <div class="flex-grow">
-                                            <label><a href="#" class="link">Grade A1 - ENV + HTML</a></label>
-                                            <label class="mb-1">100 points Sep 18 at 11:59 PM</label>
-                                        </div>
+                            </div>
+                            <div class="row px-3">
+                                <div class="d-flex float-end">
+                                    <i class="far fa-calendar me-1"></i>
+                                    <div class="ps-3">
+                                    <a href="" class="ps-3 color-main todo">Lecture</a><br>
+                                    <small class="ps-3">CS5610.17387.202410</small><br>
+                                    <small class="ps-3">Sep 18 11:59pm</small>
                                     </div>
                                 </div>
                             </div>

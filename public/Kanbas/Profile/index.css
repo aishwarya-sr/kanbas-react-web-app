@@ -12,42 +12,6 @@ h2 {
     margin: 6px 0;
 }
 
-.scrollable {
-    max-height: 85vh;
-    overflow-y: auto;
-}
-
-.navbar-side {
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-.navbar-side ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar-side li {
-    margin-left: 0;
-    padding: 5px;
-}
-
-.navbar-side li a {
-    text-decoration: none;
-    color: #d41b2c;
-}
-
-.navbar-side li.active {
-    border-left: 2px solid black;
-}
-
-.navbar-side li.active a {
-    color: black;
-}
-
 .profile-header {
     display: flex;
     align-items: center;

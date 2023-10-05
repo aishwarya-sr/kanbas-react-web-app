@@ -40,3 +40,7 @@
 .flex-grow {
     flex-grow: 1;
 }
+
+.todo {
+    text-decoration: none;
+}
