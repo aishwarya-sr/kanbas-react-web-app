@@ -9,7 +9,7 @@ import Assignment from "../Assignment";
 import AssignmentEditor from "../AssignmentEditor";
 
 function Courses() {
-  const { courseId = "CS5160" } = useParams();
+  const { courseId  } = useParams();
   const currentPath = useLocation();
   const course = db.courses.find((course) => course._id === (courseId));
   console.log("COurse:",courseId);
@@ -40,7 +40,7 @@ function Courses() {
             <Route path="Assignments" element={<Assignment/>} />
             <Route path="Assignments/:assignmentId"
                    element={<AssignmentEditor/>}/>
-            <Route path="Grades" element={<h1>Grades</h1>} />
+            {/* <Route path="Grades" element={<h1>Grades</h1>} /> */}
           </Routes>
         </div>
       </div>

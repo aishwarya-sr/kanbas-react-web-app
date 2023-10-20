@@ -19,7 +19,7 @@ function Home() {
                 <FontAwesomeIcon icon="fa-solid fa-circle-check" className="color-green me-1" />Publish All
               </button>
               <button type="button" className="btn btn-danger act-button m-1">
-                <FontAwesomeIcon icon="fa-solid fa-plus" className="color-black me-1" /> Module </button>
+                <FontAwesomeIcon icon="fa-solid fa-plus" className="color-white me-1" /> Module </button>
               <button type="button"
                 className="btn btn-light act-button default-button-background"><FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical"
                   className="color-black" /></button>

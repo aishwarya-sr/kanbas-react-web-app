@@ -20,7 +20,7 @@ function ModuleList() {
                     icon="fa-solid fa-grip-vertical" /></div>
                   <div className="color-black m-1 p-1"><FontAwesomeIcon icon="fa-solid fa-caret-right" />
                   </div>
-                  <div className="color-black m-1">{module.name}</div>
+                  <div className="color-black m-1">{module.name} - {module.description}</div>
                 </div>
                 <div className="d-flex justify-content-between list-item-container">
                   <div className="color-black p-1 color-green"><FontAwesomeIcon
