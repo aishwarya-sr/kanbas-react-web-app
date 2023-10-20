@@ -1,0 +1,179 @@
+:root {
+    --main-color: #b52828;
+    --icon-color: #b52828;
+    --border-color: #c7cdd1;
+    --button-background-color: #f5f5f5;
+    --default-text-color: #2d3b45;
+}
+
+html,
+body,
+.container-fluid {
+    height: 100%;
+}
+
+body * {
+    font-family: "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    /* height: 100%;  */
+    display: table-row;
+}
+
+
+.scrollable {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.wd-flex-col-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow {
+    flex-grow: 1;
+}
+
+.wd-width-75px {
+    width: 80px;
+}
+
+.icon {
+    color: var(--icon-color);
+    font-size: 2em;
+}
+
+.icon-user {
+    color: white;
+}
+
+.nav-element a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-black {
+    color: var(--default-text-color);
+}
+
+.color-gray {
+    color: gray !important;
+}
+
+a {
+    color: var(--main-color);
+}
+
+.color-green {
+    color: green;
+}
+
+.color-main {
+    color: var(--main-color) !important;
+    /* background-color: var(--main-color) !important; */
+}
+
+.act-button {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 3px !important;
+    padding: 8px 14px !important;
+    font-size: 1rem;
+}
+
+.act-button-icon {
+    padding: 1px !important;
+    margin: 3px !important;
+}
+
+.default-button-background {
+    background-color: var(--button-background-color) !important;
+}
+
+.main-color-button-background {
+    background-color: var(--main-color) !important;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.flex-column-center-align {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.footer {
+    border-top: 1px solid #c7cdd1;
+    padding: 10px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--button-background-color);
+    margin: 8px;
+    min-height: 4.5rem;
+    box-sizing: border-box;
+}
+
+.profile-header .icon {
+    float: left;
+    margin-right: 12px;
+    padding: 0;
+    width: 36px;
+    height: 30px;
+}
+
+#name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb .section {
+    color: #d41b2c;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.breadcrumb .element {
+    margin-right: 5px;
+}
+
+.breadcrumb {
+    align-items: center;
+}
+
+.content-toolbar {
+    border-bottom: 1px solid #c7cdd1;
+    padding: 10px;
+}
+
+.content-toolbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-toolbar-elements {
+    display: flex;
+} 
+
+.content-toolbar-elements .first {
+    flex-grow: 1;
+}
+
+.content-toolbar-element .first form {
+    border: unset;
+}

@@ -1,0 +1,59 @@
+.options button {
+    font-size: 14px;
+    padding: 8px !important;
+    text-align: left !important;
+    color: black !important;
+}
+
+.assignment-data .list-group-item {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important
+}
+
+.list-item-container {
+    align-items: center;
+}
+
+.module-header {
+    font-size: 15px;
+}
+
+.module-content {
+    font-size: 14px;
+}
+
+.calendar-list-content {
+    font-size: 12px;
+}
+
+.calendar-list-content .first {
+    background-color: var(--main-color); 
+    border-radius: 50%;
+}
+
+.module-content a, .link {
+    color: var(--main-color) !important;
+    text-decoration: none !important;
+}
+
+.calendar-header {
+    color: var(--default-text-color);
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.todo {
+    text-decoration: none;
+}
+
+.module-list {
+    border-radius: none !important;
+}
+
+.list-group-item-secondary {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 3px !important;
+    background-color: var(--button-background-color) !important;
+}

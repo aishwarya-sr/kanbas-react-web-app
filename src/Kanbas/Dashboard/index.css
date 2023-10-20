@@ -1,0 +1,48 @@
+.courses {
+    margin: 20px;
+}
+
+.courses-header {
+    border-bottom: 1px solid #c7cdd1;
+    margin-bottom: 20px;
+    min-height: 3rem;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.card-main {
+    margin: 1em;
+    width: 270px;
+}
+
+.card-top {
+    height: 180px;
+    background-color: #d41b2c;
+}
+
+.card-top .element {
+    padding: 0.5em;
+    color: white;
+}
+
+.card .text {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.card .text-bottom {
+    color: grey;
+    font-size: 13px;
+}
+
+.card .title {
+    color: gray;
+    font-size: 15px;
+}
+
+.card .card-icon {
+    margin: 0.2em;
+    font-size: 1.5em;
+}
