@@ -15,8 +15,8 @@ function App() {
    return (
        <HashRouter>
           <Routes>
-          <Route path="/"         element={<Navigate to="/Labs"/>}/>
-          <Route path="/Labs/a3/*"    element={<HelloWorld/>}/>
+          <Route path="/"         element={<Navigate to="/Labs/a3"/>}/>
+          <Route path="/hello"    element={<HelloWorld/>}/>
           <Route path="/Labs/*"   element={<Labs/>}/>
           <Route path="/Kanbas/*" element={<Kanbas/>}/>
         </Routes>

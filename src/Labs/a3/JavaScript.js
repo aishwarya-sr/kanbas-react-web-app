@@ -4,9 +4,14 @@ import BooleanVariables from "./BooleanVariables";
 import IfElse from "./IfElse";
 import TernaryOperator from "./TerneryOperator";
 import WorkingWithFunctions from './WorkingWithFunctions';
+import WorkingWithArrays from "./WorkingWithArrays";
+import TemplateLiterals from "./TemplateLiterals.js";
+import House from "./House";
+import Spread from "./Spread";
+import Destructing from "./Destructing";
+import FunctionDestructing from "./FunctionDestructing";
 
 function JavaScript() {
-   console.log('Hello World!');
     return(
        <div>
           <h1>JavaScript</h1>
@@ -16,6 +21,12 @@ function JavaScript() {
           <IfElse/>
           <TernaryOperator/>
           <WorkingWithFunctions/>
+          <WorkingWithArrays/>
+         <TemplateLiterals/>
+          <House/>
+          <Spread/>
+          <Destructing/>
+          <FunctionDestructing/>
        </div>
     );
  }
