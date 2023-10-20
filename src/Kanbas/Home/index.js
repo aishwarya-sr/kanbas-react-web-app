@@ -78,7 +78,7 @@ function Home() {
             <h5>Coming Up</h5>
           </div>
           <div className="col float-end">
-            <p><a href="" class="color-main todo"><i className="far fa-calendar me-1"></i>View Calendar</a></p>
+            <p><a href="" className="color-main todo"><FontAwesomeIcon icon="far fa-calendar" className="me-1"/>View Calendar</a></p>
           </div>
           <hr className="pe-3" />
         </div>
@@ -96,7 +96,7 @@ function Home() {
           <div className="d-flex float-end">
           <FontAwesomeIcon icon="far fa-calendar" className="me-1"/>
             <div className="ps-3">
-              <a href="" className="ps-3 color-main todo">Web development lecture</a><b />
+              <a href="" className="ps-3 color-main todo">Web development lecture</a><br />
               <small className="ps-3">CS5610.17387.202410</small><br />
               <small className="ps-3">Sep 18 11:59pm</small>
             </div>

@@ -9,10 +9,10 @@ import Assignment from "../Assignment";
 import AssignmentEditor from "../AssignmentEditor";
 
 function Courses() {
-  const { courseId } = useParams();
+  const { courseId = "CS5160" } = useParams();
   const currentPath = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
-  console.log("PATHHHHHHHHH!",currentPath.pathname )
+  const course = db.courses.find((course) => course._id === (courseId));
+  console.log("COurse:",courseId);
   return (
     <div>
      

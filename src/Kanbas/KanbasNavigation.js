@@ -15,9 +15,10 @@ function KanbasNavigation() {
                 </div>
                 {links.map((link, index) => (
                     <div className={pathname.includes(link.name) ? `nav-element nav-element-active` : `nav-element`} key={index}>
+                        
                         <Link
                             key={index}
-                            to={`/Kanbas/${link.name}/`}>
+                            to={link.name === "Courses" ? `/Kanbas/${link.name}/CS5610` : `/Kanbas/${link.name}/`}>
                                 {link.name === "Account" ? <FontAwesomeIcon icon={link.icon} className="icon color-gray" /> : <FontAwesomeIcon icon={link.icon} className="icon" />}
                             <div className="text">
                                 {link.name}
