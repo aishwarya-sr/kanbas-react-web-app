@@ -6,7 +6,6 @@ function Labs() {
    <div>
      <Nav/>
      <Assignment3/>
-     <TodoList/>
    </div>
  );
 }
