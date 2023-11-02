@@ -9,6 +9,9 @@ import StringStateVariables from "./StringStateVariables";
 import DateStateVariable from "./DateStateVariable";
 import ReduxExamples from "./ReduxExamples";
 import TodoList from "./ReduxExamples/todos/TodoList";
+import ObjectStateVariable from "./ObjectStateVariable";
+import ArrayStateVariable from "./ArrayStateVariable";
+import ParentStateComponent from "./ParentStateComponent";
 
 function Assignment4() {
     function sayHello() {
@@ -27,6 +30,9 @@ function Assignment4() {
             <BooleanStateVariables/>
             <StringStateVariables/>
             <DateStateVariable/>
+            <ObjectStateVariable/>
+            <ArrayStateVariable/>
+            <ParentStateComponent/>
             <TodoList/>
         </div>
     );
