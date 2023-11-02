@@ -45,10 +45,6 @@ function Kanbas() {
   };
   return (
     <Provider store={store}>
-
-  
-    <>
-
       <div className="container-fluid">
         <div className="row">
           <KanbasNavigation />
@@ -88,7 +84,6 @@ function Kanbas() {
           </div>
         </div>
       </div>
-    </>
     </Provider>
   );
 }

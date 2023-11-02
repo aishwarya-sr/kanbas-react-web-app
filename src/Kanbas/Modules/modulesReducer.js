@@ -13,10 +13,12 @@ const modulesSlice = createSlice({
   initialState,
   reducers: {
     addModule: (state, action) => {
+      console.log(action.payload)
       state.modules = [
         { ...action.payload, _id: new Date().getTime().toString() },
           ...state.modules,
       ];
+      console.log(state.modules);
     },
     deleteModule: (state, action) => {
       state.modules = state.modules.filter(
