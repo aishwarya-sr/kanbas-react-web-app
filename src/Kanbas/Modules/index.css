@@ -57,3 +57,7 @@
     border-radius: 3px !important;
     background-color: var(--button-background-color) !important;
 }
+
+.module-form-parent {
+    position: relative;
+}

@@ -8,11 +8,11 @@ import Home from "../Home";
 import Assignment from "../Assignment";
 import AssignmentEditor from "../AssignmentEditor";
 
-function Courses() {
+function Courses({courses}) {
   const { courseId  } = useParams();
   const currentPath = useLocation();
-  const course = db.courses.find((course) => course._id === (courseId));
-  console.log("COurse:",courseId);
+  console.log("Coursess:", courses)
+  const course = courses.find((x) => x._id === courseId)//db.courses.find((course) => course._id === (courseId));
   return (
     <div>
      
@@ -21,7 +21,8 @@ function Courses() {
           <ol className="breadcrumb">
             <li><FontAwesomeIcon icon="fa-solid fa-bars" className="icon" /></li>
             <li className="section">
-              {course._id}.{course.number}.{course.section}</li>
+              {/* {course._id}.{course.number}.{course.section} */ }
+             </li>
             <li className="element" style={{ color: "grey" }}> {'>'} </li>
             <li className="element">{currentPath.pathname.split('/').at(-1)}</li>
           </ol>

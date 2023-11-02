@@ -1,7 +1,9 @@
+import { useState } from "react";
 import ModuleList from "../Modules/ModulesList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Home() {
+  const [displayForm, setDisplayForm] = useState(false);
   return (
     <>
       <div className='col-12 col-lg-7'>
@@ -18,7 +20,9 @@ function Home() {
                 aria-haspopup="true" aria-expanded="false">
                 <FontAwesomeIcon icon="fa-solid fa-circle-check" className="color-green me-1" />Publish All
               </button>
-              <button type="button" className="btn btn-danger act-button m-1">
+              <button type="button" className="btn btn-danger act-button m-1" onClick={() => {
+                setDisplayForm(!displayForm);
+              }}>
                 <FontAwesomeIcon icon="fa-solid fa-plus" className="color-white me-1" /> Module </button>
               <button type="button"
                 className="btn btn-light act-button default-button-background"><FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical"
@@ -26,18 +30,18 @@ function Home() {
             </div>
           </div>
         </div>
-        <ModuleList />
+        <ModuleList displayForm={displayForm} setDisplayForm={setDisplayForm}/>
       </div>
       <div className="col-3 d-none d-xl-block">
         <div>
           <p>Course Status</p>
-          <div class="">
+          <div>
             <button type="button" className="btn btn-light"><FontAwesomeIcon
               icon="fa-solid fa-ban"/>Unpublish</button>
             <button type="button" className="btn btn-success" disabled><FontAwesomeIcon
               icon="fa-solid fa-circle-check"/>Published</button>
           </div>
-          <div class="list-group mt-3 list-group-flush options">
+          <div className="list-group mt-3 list-group-flush options">
             <button type="button" className="btn btn-light act-button mb-1">
             <FontAwesomeIcon icon="fa-solid fa-file-export" className="me-1"/>
              Import From Commons</button>
@@ -112,7 +116,6 @@ function Home() {
             </div>
           </div>
         </div>
-
       </div>
     </>
 

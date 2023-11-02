@@ -181,3 +181,19 @@ a {
 .content-toolbar-element .first form {
     border: unset;
 }
+
+.module-form {
+    position: absolute;
+    background-color: var(--button-background-color);
+    width: 50%;
+    height: 80%;
+}
+
+.center {
+    border: 0.5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
