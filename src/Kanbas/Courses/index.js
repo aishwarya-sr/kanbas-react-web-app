@@ -11,8 +11,7 @@ import AssignmentEditor from "../AssignmentEditor";
 function Courses({courses}) {
   const { courseId  } = useParams();
   const currentPath = useLocation();
-  console.log("Coursess:", courses)
-  const course = courses.find((x) => x._id === courseId)//db.courses.find((course) => course._id === (courseId));
+  const course = courses.find((x) => x._id === courseId)
   return (
     <div>
      
@@ -21,7 +20,7 @@ function Courses({courses}) {
           <ol className="breadcrumb">
             <li><FontAwesomeIcon icon="fa-solid fa-bars" className="icon" /></li>
             <li className="section">
-              {/* {course._id}.{course.number}.{course.section} */ }
+               {course._id}.{course.number}.{course.section}
              </li>
             <li className="element" style={{ color: "grey" }}> {'>'} </li>
             <li className="element">{currentPath.pathname.split('/').at(-1)}</li>

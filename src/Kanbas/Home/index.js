@@ -21,7 +21,7 @@ function Home() {
                 <FontAwesomeIcon icon="fa-solid fa-circle-check" className="color-green me-1" />Publish All
               </button>
               <button type="button" className="btn btn-danger act-button m-1" onClick={() => {
-                setDisplayForm(!displayForm);
+                setDisplayForm(true);
               }}>
                 <FontAwesomeIcon icon="fa-solid fa-plus" className="color-white me-1" /> Module </button>
               <button type="button"

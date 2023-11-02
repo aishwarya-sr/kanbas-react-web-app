@@ -24,8 +24,7 @@ function Kanbas() {
   })
 
   const addNewCourse = () => {
-    console.log("Add course!")
-    setCourses([...courses, { ...course, _id: new Date().getTime() }]);
+    setCourses([...courses, { ...course, _id: course.number }]);
   }
 
   const deleteCourse = (courseId) => {

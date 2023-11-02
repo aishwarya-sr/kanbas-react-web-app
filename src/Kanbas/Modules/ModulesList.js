@@ -33,11 +33,12 @@ function ModuleList({ displayForm, setDisplayForm }) {
         />
         <div className="float-end">
           <button type="button" className="btn act-button mb-1 me-2" onClick={() => {
-            isToAdd ? dispatch(addModule({...module, course: courseId})) : dispatch(updateModule(module))
+            isToAdd ? dispatch(addModule({ ...module, course: courseId })) : dispatch(updateModule(module))
             setDisplayForm(false)
           }}>
             {isToAdd ? "Add" : "Update"} </button>
           <button type="button" className="btn act-button mb-1" onClick={() => {
+            updateIsToAdd(true)
             setDisplayForm(false)
           }}>
             Cancel </button>
