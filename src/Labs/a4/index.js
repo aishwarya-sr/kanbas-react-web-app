@@ -12,6 +12,7 @@ import TodoList from "./ReduxExamples/todos/TodoList";
 import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
+import ClickEvent from "./ClickEvent";
 
 function Assignment4() {
     function sayHello() {
@@ -21,8 +22,8 @@ function Assignment4() {
     return (
         <div>
             <h1>Assignment 4</h1>
-            <ReduxExamples/>
             <Add a={1} b={2}/>
+            <ClickEvent/>
             <PassingDataOnEvent/>
             <PassingFunctions theFunction={sayHello}/>
             <EventObject/>
@@ -33,6 +34,7 @@ function Assignment4() {
             <ObjectStateVariable/>
             <ArrayStateVariable/>
             <ParentStateComponent/>
+            <ReduxExamples/>
             <TodoList/>
         </div>
     );
