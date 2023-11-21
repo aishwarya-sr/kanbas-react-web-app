@@ -12,7 +12,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { setCourses, setCourse } from "./courseReducer";
 import { useDispatch } from "react-redux";
-
+const API_BASE = process.env.REACT_APP_API_BASE
 function Courses() {
   const { courseId  } = useParams();
   const currentPath = useLocation();
