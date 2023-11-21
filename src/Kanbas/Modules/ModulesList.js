@@ -1,14 +1,10 @@
 import { React, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  addModule,
-  deleteModule,
-  updateModule,
-  setModule,
-} from "./modulesReducer";
+import { addModule, deleteModule, updateModule, setModule, setModules } from "./modulesReducer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import * as service from "./moduleService";
+import { useEffect } from "react";
 
 function ModuleList({ displayForm, setDisplayForm }) {
   const { courseId } = useParams();
@@ -16,6 +12,34 @@ function ModuleList({ displayForm, setDisplayForm }) {
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
   const [isToAdd, updateIsToAdd] = useState(true);
+
+  useEffect(() => {
+    service.findModulesForCourse(courseId)
+      .then((modules) => {
+        console.log(modules)
+        dispatch(setModules(modules))
+      }
+    );
+  }, [courseId]);
+
+  const handleAddModule = () => {
+    service.createModule(courseId, module).then((response) =>  {
+      dispatch(addModule(response))
+    }
+    )
+  }
+
+  const handleDeleteModule = (moduleId) => {
+    service.deleteModule(moduleId).then((_) => {
+      dispatch(deleteModule(moduleId))
+    })
+  }
+
+  const handleUpdateModule = (module) => {
+    service.updateModule(module).then((_) => 
+    dispatch(updateModule(module))
+    )
+  }
 
   const displayModuleForm = () => {
     return (
@@ -33,7 +57,8 @@ function ModuleList({ displayForm, setDisplayForm }) {
         />
         <div className="float-end">
           <button type="button" className="btn act-button mb-1 me-2" onClick={() => {
-            isToAdd ? dispatch(addModule({ ...module, course: courseId })) : dispatch(updateModule(module))
+            // isToAdd ? dispatch(addModule({ ...module, course: courseId })) : dispatch(updateModule(module))
+            isToAdd ? handleAddModule() : handleUpdateModule(module)
             setDisplayForm(false)
           }}>
             {isToAdd ? "Add" : "Update"} </button>
@@ -75,7 +100,7 @@ function ModuleList({ displayForm, setDisplayForm }) {
                       setDisplayForm(true)
                     }} /></div>
                   <div className="color-black m-1 p-1"><FontAwesomeIcon
-                    icon="fa-solid fa-trash" onClick={() => { dispatch(deleteModule(module._id)) }} /></div>
+                    icon="fa-solid fa-trash" onClick={() => { handleDeleteModule(module._id) }} /></div>
                   <div className="color-black m-1 p-1"><FontAwesomeIcon
                     icon="fa-solid fa-ellipsis-vertical" /></div>
                 </div>

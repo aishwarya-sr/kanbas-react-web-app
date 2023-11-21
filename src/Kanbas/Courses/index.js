@@ -7,11 +7,41 @@ import Modules from "../Modules";
 import Home from "../Home";
 import Assignment from "../Assignment";
 import AssignmentEditor from "../AssignmentEditor";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import axios from "axios";
+import { setCourses, setCourse } from "./courseReducer";
+import { useDispatch } from "react-redux";
 
-function Courses({courses}) {
+function Courses() {
   const { courseId  } = useParams();
   const currentPath = useLocation();
+
+  const dispatch = useDispatch();
+  const courses = useSelector((state) => state.courseReducer.courses)
   const course = courses.find((x) => x._id === courseId)
+
+  const URL = "http://localhost:4000/api/courses";
+
+  const findAllCourses = async () => {
+    return await axios.get(URL);
+  };
+
+  useEffect(() => {
+    findAllCourses().then(
+      (response) => {
+        console.log(response.data);
+        dispatch(setCourses(response.data));
+        dispatch(setCourse(courses.find((x) => x._id === courseId)))
+      }
+    );
+  }, []);
+
+  if (!courses || !course) {
+    console.log("Empty!!")
+    return <></>
+  }
+
   return (
     <div>
      
@@ -46,7 +76,6 @@ function Courses({courses}) {
       </div>
       <div>
       </div>
-
     </div>
   );
 }
