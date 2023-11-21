@@ -21,7 +21,7 @@ function Courses() {
   const courses = useSelector((state) => state.courseReducer.courses)
   const course = courses.find((x) => x._id === courseId)
 
-  const URL = "http://localhost:4000/api/courses";
+  const URL = `${API_BASE}/api/courses`
 
   const findAllCourses = async () => {
     return await axios.get(URL);
