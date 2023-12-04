@@ -71,7 +71,7 @@ function UserTable() {
           </tr>
           <tr>
           <td className="text-nowrap row">
-              <input className="form-control w-25 me-2" value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
+              <input className="form-control w-50 me-2" value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
               <input  className="form-control w-25"  value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}/>
             </td>
             <td>
@@ -100,9 +100,10 @@ function UserTable() {
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
-              <Link to={`../account/${user._id}`}>
-              <td>{user.username}</td>
-              </Link>
+              <td>
+              <Link to={`../account/${user._id}`} style={{textDecoration:0}}>
+              {user.username}
+              </Link></td>
              
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
