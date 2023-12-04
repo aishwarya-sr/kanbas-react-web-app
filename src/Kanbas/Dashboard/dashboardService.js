@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_BASE
+const API_BASE = process.env.REACT_APP_API_BASE || "https://kanbas-node-server-app-nu35.onrender.com"
 const COURSES_URL = `${API_BASE}/api/courses`
 
 export const findAllCourses = async() => {
